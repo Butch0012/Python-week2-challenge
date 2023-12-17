@@ -61,3 +61,6 @@ class Review:
     # Testing the code
 customer1 = Customer("Elnathan", "Mburu")
 print(customer1.full_name())  # Output: Elnathan Mburu
+
+restaurant = Restaurant("Sample Restaurant")
+print(restaurant.get_name())  # Output: Sample Restaurant
