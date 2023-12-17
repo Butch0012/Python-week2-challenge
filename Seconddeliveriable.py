@@ -1,3 +1,4 @@
+#Review class 
 class Review:
     reviews = []
 
@@ -50,3 +51,7 @@ class Customer:
         new_review = Review(self, restaurant, rating)
         self.customer_reviews.append(new_review)
         return new_review
+    
+    # Create instances
+customer1 = Customer("Elnathan", "Mburu")
+customer2 = Customer("John", "Njoro") 
