@@ -12,4 +12,8 @@ class Customer:
         self.given_name = given_name    
      # Change the customer's family name
     def set_family_name(self, family_name):
-        self.family_name = family_name    
+        self.family_name = family_name   
+         
+    def get_given_name(self):
+        # Get the customer's given name
+        return self.given_name
