@@ -43,3 +43,13 @@ class Restaurant:
  # Review Class
 class Review:
     reviews = []  # A list to store all review instances
+    def __init__(self, customer, restaurant, rating):
+        # Initialize a new review with a customer, restaurant, and rating
+        self.customer = customer
+        self.restaurant = restaurant
+        self.rating = rating
+        Review.reviews.append(self)  # Add the new review to the list
+        
+    def get_rating(self):
+        # Get the rating for the restaurant in this review
+        return self.rating
