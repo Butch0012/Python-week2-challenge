@@ -39,3 +39,7 @@ class Restaurant:
     def get_name(self):
         # Get the restaurant's name
         return self._name
+    
+ # Review Class
+class Review:
+    reviews = []  # A list to store all review instances
