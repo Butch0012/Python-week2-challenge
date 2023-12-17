@@ -13,6 +13,10 @@ def customer(self):
         # Returns the customer object for that review
         return self._customer
 
+def restaurant(self):
+        # Returns the restaurant object for that given review
+        return self._restaurant
+
 
 
 # Customer Class
