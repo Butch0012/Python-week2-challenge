@@ -22,7 +22,10 @@ class Restaurant:
     def __init__(self, name):
         self._name = name
         self.restaurant_reviews = []
-
+        
+def reviews(self):
+        # Returns a list of all reviews for that restaurant
+        return self.restaurant_reviews
 # Customer Class
 class Customer:
     customers = []  # A list to store all customer instances
