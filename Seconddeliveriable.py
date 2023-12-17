@@ -17,7 +17,11 @@ def restaurant(self):
         # Returns the restaurant object for that given review
         return self._restaurant
 
-
+# Restaurant Class
+class Restaurant:
+    def __init__(self, name):
+        self._name = name
+        self.restaurant_reviews = []
 
 # Customer Class
 class Customer:
