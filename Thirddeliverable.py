@@ -13,7 +13,7 @@ class Customer:
         return len(self.customer_reviews)
     
     def find_by_name(cls, name):
-        # Given a string of a full name, returns the first customer whose full name matches
+        # given a string of a full  returns the first customer whose full name matches
         for customer in cls.customers:
             if customer.full_name() == name:
                 return customer
