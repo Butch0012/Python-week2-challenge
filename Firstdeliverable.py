@@ -57,3 +57,6 @@ class Review:
     def all(cls):
         # Get all review instances
         return cls.reviews
+    
+    # Testing the code
+customer1 = Customer("Elnathan", "Mburu")
