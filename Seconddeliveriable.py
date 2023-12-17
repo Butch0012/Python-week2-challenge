@@ -26,6 +26,10 @@ class Restaurant:
 def reviews(self):
         # Returns a list of all reviews for that restaurant
         return self.restaurant_reviews
+
+def customers(self):
+        # Returns a unique list of all customers who have reviewed this restaurant
+        return list(set(review.customer for review in self.restaurant_reviews))
 # Customer Class
 class Customer:
     customers = []  # A list to store all customer instances
