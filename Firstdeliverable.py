@@ -25,3 +25,7 @@ class Customer:
     def full_name(self):
         # Get the full name of the customer
         return f"{self.given_name} {self.family_name}"
+    
+    def all(cls):
+        # Get all customer instances
+        return cls.customers
