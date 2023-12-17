@@ -62,5 +62,8 @@ class Review:
 customer1 = Customer("Elnathan", "Mburu")
 print(customer1.full_name())  # Output: Elnathan Mburu
 
-restaurant = Restaurant("Sample Restaurant")
-print(restaurant.get_name())  # Output: Sample Restaurant
+restaurant = Restaurant("Safari Park")
+print(restaurant.get_name())  # Output: Safari Park
+
+review1 = Review(customer1, restaurant, 6)
+print(review1.get_rating())  # Output: 6
