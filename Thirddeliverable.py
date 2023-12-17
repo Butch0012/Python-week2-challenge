@@ -18,3 +18,11 @@ class Customer:
             if customer.full_name() == name:
                 return customer
         return None
+    def find_all_by_given_name(cls, name):
+        # Given a string of a given name, returns a list containing all customers with that given name
+        return [customer for customer in cls.customers if customer.given_name == name]
+#Restaurant Class
+class Restaurant:
+    def __init__(self, name):
+        self._name = name
+        self.restaurant_reviews = []
