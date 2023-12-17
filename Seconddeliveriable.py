@@ -55,3 +55,11 @@ class Customer:
     # Create instances
 customer1 = Customer("Elnathan", "Mburu")
 customer2 = Customer("John", "Njoro") 
+
+restaurant1 = Restaurant("Restaurant A")
+restaurant2 = Restaurant("Restaurant B")
+
+# Add reviews
+review1 = customer1.add_review(restaurant1, 2)
+review2 = customer1.add_review(restaurant2, 3)
+review3 = customer2.add_review(restaurant1, 4) 
