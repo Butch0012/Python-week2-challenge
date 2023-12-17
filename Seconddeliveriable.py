@@ -1,3 +1,20 @@
+class Review:
+    reviews = []
+
+    def __init__(self, customer, restaurant, rating):
+        self._customer = customer
+        self._restaurant = restaurant
+        self.rating = rating
+        Review.reviews.append(self)
+        restaurant.restaurant_reviews.append(self)
+        customer.customer_reviews.append(self)
+
+def customer(self):
+        # Returns the customer object for that review
+        return self._customer
+
+
+
 # Customer Class
 class Customer:
     customers = []  # A list to store all customer instances
