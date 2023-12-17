@@ -49,7 +49,11 @@ class Review:
         self.restaurant = restaurant
         self.rating = rating
         Review.reviews.append(self)  # Add the new review to the list
-        
+
     def get_rating(self):
         # Get the rating for the restaurant in this review
         return self.rating
+    
+    def all(cls):
+        # Get all review instances
+        return cls.reviews
