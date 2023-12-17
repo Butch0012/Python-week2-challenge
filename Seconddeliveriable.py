@@ -12,3 +12,9 @@ class Customer:
     def reviewed_restaurants(self):
         # Returns a unique list of all restaurants a customer has reviewed
         return list(set(review.restaurant for review in self.customer_reviews))
+    
+    def add_review(self, restaurant, rating):
+        # Adds a new review associated with this customer and restaurant
+        new_review = Review(self, restaurant, rating)
+        self.customer_reviews.append(new_review)
+        return new_review
