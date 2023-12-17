@@ -29,3 +29,7 @@ class Customer:
     def all(cls):
         # Get all customer instances
         return cls.customers
+    
+    # Restaurant Class
+class Restaurant:
+    def __init__(self, name):
