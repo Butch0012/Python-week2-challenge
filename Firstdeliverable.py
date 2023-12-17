@@ -33,3 +33,9 @@ class Customer:
     # Restaurant Class
 class Restaurant:
     def __init__(self, name):
+        self._name = name 
+        #Initialize a new restaurant with a name
+
+    def get_name(self):
+        # Get the restaurant's name
+        return self._name
