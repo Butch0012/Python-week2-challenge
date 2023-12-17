@@ -10,3 +10,6 @@ class Customer:
      # Change the customer's given name
     def set_given_name(self, given_name):
         self.given_name = given_name    
+     # Change the customer's family name
+    def set_family_name(self, family_name):
+        self.family_name = family_name    
