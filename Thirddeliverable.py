@@ -55,3 +55,8 @@ print(customer2.num_reviews())  # Output: 1
 # Test find_by_name class method
 found_customer = Customer.find_by_name("Elnathan Mburu")
 print(found_customer.full_name())  # Output: Elnathan Mburu
+
+# Test find_all_by_given_name class method
+customers_with_given_name = Customer.find_all_by_given_name("Joseph")
+for customer in customers_with_given_name:
+    print(customer.full_name())  # Output: Joseph Mwangi
