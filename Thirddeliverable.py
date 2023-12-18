@@ -39,3 +39,7 @@ class Restaurant:
     # Testing Customer Class
 customer1 = Customer("Elnathan", "Mburu")
 customer2 = Customer("Joseph", "Mwangi")
+
+# Add reviews for customers
+restaurant1 = Restaurant("Restaurant A")
+restaurant2 = Restaurant("Restaurant B")
