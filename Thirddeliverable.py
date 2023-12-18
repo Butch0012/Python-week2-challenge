@@ -51,4 +51,7 @@ customer2.add_review(restaurant1, 2)
 # Test num_reviews method
 print(customer1.num_reviews())  # Output: 2
 print(customer2.num_reviews())  # Output: 1
-print(customer3.num_reviews())  # Output: 1
+
+# Test find_by_name class method
+found_customer = Customer.find_by_name("Elnathan Mburu")
+print(found_customer.full_name())  # Output: Elnathan Mburu
