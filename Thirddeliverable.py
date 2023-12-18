@@ -26,8 +26,12 @@ class Restaurant:
     def __init__(self, name):
         self._name = name
         self.restaurant_reviews = []
-        
+
     def average_star_rating(self):
         # Returns the average star rating for a restaurant based on its reviews
         if not self.restaurant_reviews:
             return 0  # Return 0 if there are no reviews
+        
+        total_ratings = sum(review.rating for review in self.restaurant_reviews)
+        num_reviews = len(self.restaurant_reviews)
+        return total_ratings / num_reviews if num_reviews > 0 else 0  # Avoid division by zero
