@@ -35,3 +35,7 @@ class Restaurant:
         total_ratings = sum(review.rating for review in self.restaurant_reviews)
         num_reviews = len(self.restaurant_reviews)
         return total_ratings / num_reviews if num_reviews > 0 else 0  # Avoid division by zero
+    
+    # Testing Customer Class
+customer1 = Customer("Elnathan", "Mburu")
+customer2 = Customer("Joseph", "Mwangi")
