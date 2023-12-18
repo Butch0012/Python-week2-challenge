@@ -43,3 +43,12 @@ customer2 = Customer("Joseph", "Mwangi")
 # Add reviews for customers
 restaurant1 = Restaurant("Restaurant A")
 restaurant2 = Restaurant("Restaurant B")
+
+customer1.add_review(restaurant1, 5)  
+customer1.add_review(restaurant2, 4)  
+customer2.add_review(restaurant1, 2)  
+
+# Test num_reviews method
+print(customer1.num_reviews())  # Output: 2
+print(customer2.num_reviews())  # Output: 1
+print(customer3.num_reviews())  # Output: 1
