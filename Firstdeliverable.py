@@ -1,3 +1,4 @@
+# Initializers, Readers, and Writers
 # Customer Class
 class Customer:
     customers = []  # A list to store all customer instances
