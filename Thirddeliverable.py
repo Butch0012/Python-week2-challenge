@@ -39,18 +39,25 @@ class Restaurant:
     # Testing Customer Class
 customer1 = Customer("Elnathan", "Mburu")
 customer2 = Customer("Joseph", "Mwangi")
+customer3 = Customer("John", "Mwangi")
 
 # Add reviews for customers
 restaurant1 = Restaurant("Restaurant A")
 restaurant2 = Restaurant("Restaurant B")
 
-customer1.add_review(restaurant1, 5)  
+
+customer1.add_review(restaurant1, 3)  
 customer1.add_review(restaurant2, 4)  
 customer2.add_review(restaurant1, 2)  
+customer3.add_review(restaurant2, 5) 
+
+
 
 # Test num_reviews method
 print(customer1.num_reviews())  # Output: 2
 print(customer2.num_reviews())  # Output: 1
+
+
 
 # Test find_by_name class method
 found_customer = Customer.find_by_name("Elnathan Mburu")
@@ -64,3 +71,14 @@ for customer in customers_with_given_name:
     # Testing Restaurant Class
 restaurant3 = Restaurant("Restaurant C")
 restaurant4 = Restaurant("Restaurant D")
+
+# Add reviews for restaurants
+customer1.add_review(restaurant3, 4)
+customer2.add_review(restaurant3, 3)
+customer3.add_review(restaurant4, 5)
+
+# Test average_star_rating method
+print(restaurant1.average_star_rating())  # Output: 3.0 (average of 3 and 4)
+print(restaurant3.average_star_rating())  # Output: 4.0 (average of 4 and 3)
+print(restaurant4.average_star_rating())  # Output: 5.0 (only one review with a rating of 5)
+
