@@ -60,3 +60,7 @@ print(found_customer.full_name())  # Output: Elnathan Mburu
 customers_with_given_name = Customer.find_all_by_given_name("Joseph")
 for customer in customers_with_given_name:
     print(customer.full_name())  # Output: Joseph Mwangi
+
+    # Testing Restaurant Class
+restaurant3 = Restaurant("Restaurant C")
+restaurant4 = Restaurant("Restaurant D")
